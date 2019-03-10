@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 @font-face {
     font-family: "DejaVuSans";
     src: url("./assets/fonts/DejaVuSans.ttf") format("truetype");
@@ -124,9 +127,13 @@ li:focus {
     margin-right: 2px;
 }
 
+.hexagons {
+    margin-left: 10px;
+}
+
 .hexagon-grid {
     overflow: hidden;
-    width: 60%;
+    width: 988px;
     margin: 80px auto;
     padding:0.707% 0;
 }
@@ -164,8 +171,8 @@ li:focus {
 
 @media (min-width:1201px) {
     .hexagon-grid li {
-        width: 19.2%; 
-        padding-bottom: 22.170%;
+        width: 18.2%; 
+        padding-bottom: 20.92%;
     }
     .hexagon-grid li:nth-child(9n+1),
     .hexagon-grid li:nth-child(9n+2),
@@ -187,25 +194,25 @@ li:focus {
     }
     .hexagon-grid li:nth-child(9n+1),
     .hexagon-grid li:nth-child(9n+10) {
-        margin-left: 0.5%;
+        margin-left: 1%;
         clear: left;
     }
     .hexagon-grid li:nth-child(9n+2),
     .hexagon-grid li:nth-child(9n+6),
     .hexagon-grid li:nth-child(9n+8) {
-        margin-left: 1%;
-        margin-right: 1%;
+        margin-left: 1.95%;
+        margin-right: 1.95%;
     }
     .hexagon-grid li:nth-child(9n+3) {
-        margin-right: 1%;
+        margin-right: 1.95%;
     }
     .hexagon-grid li:nth-child(9n+5),
     .hexagon-grid li:nth-child(9n+6),
     .hexagon-grid li:nth-child(9n+7),
     .hexagon-grid li:nth-child(9n+8),
     .hexagon-grid li:nth-child(9n+9) {
-        margin-top: -4.676%;
-        margin-bottom: -4.676%;
+        margin-top: -3.676%;
+        margin-bottom: -3.676%;
     }
 }
 
@@ -299,4 +306,154 @@ li:focus {
     .hexagon-grid li:nth-child(3n+4) {
         clear: left;
     }
+}
+
+.about {
+    margin-top: -35px;
+}
+
+.slider {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.slider-point {
+    display: flex;
+    margin: 0 30px;
+}
+
+.slider-point div {
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+    background-color: #ddd2c5;
+}
+
+.slider-line {
+    width: 95%;
+    height: 0;
+    margin: 11px auto;
+    border-bottom: 1px solid #e4e9eb;
+}
+
+.slider-block {
+    width: 100%;
+    height: 341px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2eb398;
+}
+
+.slider-case {
+    width: 820px;
+    height: 316px;
+    border-right: 1px solid #219d84;
+    border-left: 1px solid #219d84;
+
+}
+
+.about-photo {
+    margin-top: 57px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+.hexagon {
+    position: relative;
+    width: 180px; 
+    height: 103.92px;
+    margin: 51.96px 0;
+    background-image: url('./assets/images/photo.png');
+    background-size: auto 207.846px;
+    background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+    position: absolute;
+    z-index: 1;
+    width: 127.28px;
+    height: 127.28px;
+    overflow: hidden;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background: inherit;
+    left: 26.36px;
+}
+
+.hexTop:after,
+.hexBottom:after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 103.92px;
+    -webkit-transform:  rotate(45deg) scaleY(1.732) translateY(-51.9615px);
+    -ms-transform:      rotate(45deg) scaleY(1.732) translateY(-51.9615px);
+    transform:          rotate(45deg) scaleY(1.732) translateY(-51.9615px);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: inherit;
+}
+
+.hexTop {
+    top: -63.64px;
+}
+
+.hexTop:after {
+    background-position: center top;
+}
+
+.hexBottom {
+    bottom: -63.64px;
+}
+
+.hexBottom:after {
+    background-position: center bottom;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 180px;
+    height: 103.92px;
+    z-index: 2;
+    background: inherit;
+}
+
+.about-text{
+    width: 100%;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.about-text p {
+    font-family: 'Lato', sans-serif;
+    font-size: 9pt;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    line-height: 16pt;
+    margin-top: 11px;
+    margin-right: 20px;
+}
+
+.about-text h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 22pt;
+    color: rgba(215, 252, 245, 255);
+    font-weight: 400;
+    text-align: justify;
+}
+
+.about-text h3 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13pt;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
 }
